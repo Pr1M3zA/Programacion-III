@@ -14,9 +14,11 @@ class Frame extends JFrame{
 		setBounds(200,200,405,500);
 		setLocationRelativeTo(null);
 		setTitle("Sistema Administrativo");
-		setResizable(false);
+		setResizable(true);
+		SpringLayout layout = new SpringLayout(); 
+		setLayout(layout);
 		
-		JMenuBar mb =  new JMenuBar();
+		/*JMenuBar mb =  new JMenuBar();
 		setJMenuBar(mb);
 		
 		JMenu menu1 = new JMenu("Archivo");
@@ -38,17 +40,26 @@ class Frame extends JFrame{
 		JMenuItem item3 = new JMenuItem("Opcion 3");
 		menu1.add(item3);
 		JMenuItem item4 = new JMenuItem("Ayuda");
-		mi2.add(item4);
-		//PanelRegister panel = new PanelRegister();
-		//add(panel);
+		mi2.add(item4);*/
 		
-		//PanelLogin panel2 = new PanelLogin();
-		//add(panel2);
+		PanelRegister panel = new PanelRegister();
+		add(panel);
+		layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, panel, 0, SpringLayout.HORIZONTAL_CENTER, this.getContentPane());
+		layout.putConstraint(SpringLayout.VERTICAL_CENTER, panel, 0, SpringLayout.VERTICAL_CENTER, this.getContentPane());
 		
-		//PanelChangePassword panel3 = new PanelChangePassword();
-		//add(panel3);
+		/*PanelLogin panel2 = new PanelLogin();
+		add(panel2);
+		layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, panel2, 0, SpringLayout.HORIZONTAL_CENTER, this.getContentPane());
+		layout.putConstraint(SpringLayout.VERTICAL_CENTER, panel2, 0, SpringLayout.VERTICAL_CENTER, this.getContentPane());
+		
+		PanelChangePassword panel3 = new PanelChangePassword();
+		add(panel3);
+		layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, panel3, 0, SpringLayout.HORIZONTAL_CENTER, this.getContentPane());
+		layout.putConstraint(SpringLayout.VERTICAL_CENTER, panel3, 0, SpringLayout.VERTICAL_CENTER, this.getContentPane());
 		
 		PanelMenu panel4 = new PanelMenu();
 		add(panel4);
+		layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, panel4, 0, SpringLayout.HORIZONTAL_CENTER, this.getContentPane());
+		layout.putConstraint(SpringLayout.VERTICAL_CENTER, panel4, 0, SpringLayout.VERTICAL_CENTER, this.getContentPane());*/
 	}
 }

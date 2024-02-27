@@ -1,11 +1,15 @@
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 
 import javax.swing.*;
 
 public class PanelRegister extends JPanel {
 	public PanelRegister() {
+		
 		setLayout(null);
+		setPreferredSize(new Dimension(405,500));
+
 		JButton button = new JButton("Aceptar");
 		button.setBounds(205, 370, 120, 30);
 		button.setBackground(new Color(228, 232, 255));
@@ -20,10 +24,10 @@ public class PanelRegister extends JPanel {
 		lNewUser.setFont(new Font("Serif", Font.BOLD,30));
 		lNewUser.setBounds(100,20,500,100);
 		add(lNewUser);
-	
+		
 		JLabel lUser = new JLabel("Usuario");
 		lUser.setFont(new Font("SansSerif", Font.PLAIN,15));
-		lUser.setBounds(80,85,500,100);
+		lUser.setBounds(80,80,500,100);
 		add(lUser);
 		
 		JLabel lEmail = new JLabel("Correo");

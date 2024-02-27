@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 
 import javax.swing.*;
@@ -7,6 +8,7 @@ public class PanelChangePassword extends JPanel {
 	
 	public PanelChangePassword() {
 		setLayout(null);
+		setPreferredSize(new Dimension(405,500));
 		
 		JButton button = new JButton("Confirmar");
 		button.setBounds(205, 370, 120, 30);

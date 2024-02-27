@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 
 import javax.swing.*;
@@ -6,7 +7,8 @@ import javax.swing.*;
 public class PanelLogin extends JPanel {
  
 	public PanelLogin(){
-	 setLayout(null);
+		setLayout(null);
+		setPreferredSize(new Dimension(405,500));
 		JButton button = new JButton("Aceptar");
 		button.setBounds(205, 370, 120, 30);
 		button.setBackground(new Color(228, 232, 255));
