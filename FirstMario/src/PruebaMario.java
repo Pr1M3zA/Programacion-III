@@ -1,8 +1,9 @@
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 
 import javax.swing.JFrame;
 
-public class PruebaMario {
+public class PruebaMario extends FirstWorld{
 	
 	public static void main(String[] args) {
         JFrame frame = new JFrame("Java 2D Graphics");

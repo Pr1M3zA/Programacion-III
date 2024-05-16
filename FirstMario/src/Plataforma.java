@@ -4,7 +4,7 @@ import java.awt.Graphics2D;
 
 public class Plataforma {
 
-	private boolean showShadow, showRivet;
+		private boolean showShadow, showRivet;
 		private int x, y, w, h;
 	    private Color color;
 	    final Color BLACK_SHADOW = new Color(33,33,33);
